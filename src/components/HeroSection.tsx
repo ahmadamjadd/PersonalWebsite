@@ -38,7 +38,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Muhammad Ahmad Amjad | AWS Solutions Architect & Deep Learning Engineer. 
+              Muhammad Ahmad Amjad | Cloud Dev | Artificial Intelligence. 
               Building intelligent systems that scale.
             </p>
 
@@ -52,7 +52,9 @@ const HeroSection = () => {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="#contact"
+                href="https://drive.google.com/file/d/1oiLDvQL7x4rTmP-SdbpamIic2JG8oeDg/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="cyber-button inline-flex items-center justify-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg font-mono font-semibold hover:bg-primary/10 transition-all"
               >
                 <Download className="w-4 h-4" />
@@ -64,7 +66,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-6 justify-center lg:justify-start">
               <span className="font-mono text-sm text-muted-foreground">Connect:</span>
               <a
-                href="https://linkedin.com/in/muhammad-ahmad-amjad"
+                href="https://linkedin.com/in/muhammad-ahmad-amjad-2862a5290"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass-card rounded-lg hover:border-primary/50 transition-all group"
@@ -105,15 +107,6 @@ const HeroSection = () => {
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>
-
-              {/* Floating badge */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -right-4 glass-card px-4 py-2 rounded-lg"
-              >
-                <span className="font-mono text-sm text-primary">AWS Certified</span>
-              </motion.div>
             </div>
           </motion.div>
         </div>

@@ -5,30 +5,32 @@ const interests = [
   {
     title: "Cloud Computing",
     icon: Cloud,
-    description: "AWS Infrastructure, Serverless (Lambda/Fargate), Terraform (IaC), CI/CD Pipelines",
+    description: "AWS, Terraform (IaC), Boto3",
     color: "primary",
   },
   {
     title: "Artificial Intelligence",
     icon: Brain,
-    description: "Computer Vision (YOLO/TensorRT), Deep Learning, Agentic Workflows (LangGraph/RAG)",
+    description: "Computer Vision, Deep Learning, Agentic Workflows",
     color: "secondary",
   },
   {
     title: "Autonomous Systems",
     icon: Plane,
-    description: "Edge AI (Jetson Nano), Drone Navigation (DroneKit), Embedded Systems",
+    description: "Edge AI, Drone Navigation (DroneKit), Embedded Systems",
     color: "accent",
   },
 ];
 
 const techStack = [
-  { icon: Server, label: "AWS Lambda" },
-  { icon: Cpu, label: "TensorRT" },
-  { icon: Workflow, label: "LangGraph" },
-  { icon: Eye, label: "YOLO" },
-  { icon: Microchip, label: "Jetson Nano" },
+  { icon: Cloud, label: "AWS" },
   { icon: Cloud, label: "Terraform" },
+  { icon: Cloud, label: "Boto3" },
+  { icon: Cpu, label: "TensorRT" },
+  { icon: Workflow, label: "LangChain" },
+  { icon: Eye, label: "YOLO" },
+  { icon: Microchip, label: "Jetson Orin Nano" },
+  
 ];
 
 const InterestsSection = () => {

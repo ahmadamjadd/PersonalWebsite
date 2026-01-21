@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Terminal } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Terminal, Loader2, CheckCircle } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -8,11 +8,35 @@ const ContactSection = () => {
     email: "",
     message: "",
   });
+  
+  const [status, setStatus] = useState("idle"); // "idle" | "submitting" | "success" | "error"
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setStatus("submitting");
+
+    try {
+      // ✅ ENDPOINT UPDATED HERE
+      const response = await fetch("https://formspree.io/f/meeenoqn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" }); // Clear form
+        setTimeout(() => setStatus("idle"), 5000); // Reset button after 5 seconds
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
   };
 
   const contactInfo = [
@@ -194,11 +218,32 @@ const ContactSection = () => {
 
                 <button
                   type="submit"
-                  className="w-full cyber-button inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-cyber text-primary-foreground rounded-lg font-mono font-semibold shadow-neon-cyan hover:shadow-lg transition-all"
+                  disabled={status === "submitting"}
+                  className="w-full cyber-button inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-cyber text-primary-foreground rounded-lg font-mono font-semibold shadow-neon-cyan hover:shadow-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  <Send className="w-4 h-4" />
-                  Transmit Message
+                  {status === "submitting" ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Transmitting...
+                    </>
+                  ) : status === "success" ? (
+                    <>
+                      <CheckCircle className="w-4 h-4" />
+                      Transmission Successful
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4" />
+                      Transmit Message
+                    </>
+                  )}
                 </button>
+                
+                {status === "error" && (
+                  <p className="text-red-500 text-xs font-mono text-center">
+                    Error: Transmission failed. Please try again later.
+                  </p>
+                )}
               </div>
             </form>
           </motion.div>

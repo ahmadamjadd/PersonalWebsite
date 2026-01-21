@@ -5,10 +5,13 @@ const projects = [
   {
     title: "GikiPool",
     description: "Serverless carpooling platform for university students with real-time matching and secure authentication.",
-    tech: ["React", "AWS Lambda", "DynamoDB", "Cognito", "Terraform"],
+    // Updated "AWS Lambda" to "AWS"
+    tech: ["AWS Lambda", "AWS API Gateaway", "DynamoDB", "Cognito", "Terraform", "React"],
     icon: Cloud,
     category: "Cloud",
     color: "primary",
+    // Added GitHub Link
+    github: "https://github.com/ahmadamjadd/GikiPool"
   },
   {
     title: "Sehat Fahm",
@@ -17,6 +20,8 @@ const projects = [
     icon: Brain,
     category: "AI",
     color: "secondary",
+    // Added GitHub Link
+    github: "https://github.com/ahmadamjadd/MultiAgents/tree/main/HealthInsightsAgent"
   },
   {
     title: "Automated ECS Pipeline",
@@ -25,14 +30,18 @@ const projects = [
     icon: Server,
     category: "DevOps",
     color: "primary",
+    // Added GitHub Link
+    github: "https://github.com/ahmadamjadd/Automated-ECS-Fargate-Delivery-Pipeline"
   },
   {
     title: "Oral Cancer Detection",
-    description: "Histopathological classification system achieving 95% accuracy using deep learning.",
+    description: "Histopathological classification system achieving 95% test accuracy using deep learning.",
     tech: ["TensorFlow", "EfficientNetB3", "Flask", "Python", "OpenCV"],
     icon: Activity,
     category: "ML",
     color: "accent",
+    // Added GitHub Link
+    github: "https://github.com/ahmadamjadd/Deep-Learning/tree/main/CancerDetection"
   },
 ];
 
@@ -101,14 +110,18 @@ const PortfolioSection = () => {
                     </div>
                   </div>
 
-                  {/* Action buttons */}
+                  {/* Action buttons - UPDATED */}
                   <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <button className="p-2 rounded-lg bg-muted hover:bg-primary/10 transition-colors">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg bg-muted hover:bg-primary/10 transition-colors cursor-pointer"
+                      title="View Code on GitHub"
+                    >
                       <Github className="w-4 h-4 text-muted-foreground hover:text-primary" />
-                    </button>
-                    <button className="p-2 rounded-lg bg-muted hover:bg-primary/10 transition-colors">
-                      <ExternalLink className="w-4 h-4 text-muted-foreground hover:text-primary" />
-                    </button>
+                    </a>
+                    {/* External Link icon removed as requested */}
                   </div>
                 </div>
 

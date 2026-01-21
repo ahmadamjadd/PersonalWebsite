@@ -36,7 +36,7 @@ const Navbar = () => {
         <a href="#home" className="flex items-center gap-2 group">
           <Terminal className="w-6 h-6 text-primary group-hover:animate-pulse" />
           <span className="font-mono font-bold text-lg tracking-tight">
-            <span className="text-primary">M</span>AA
+            <span className="text-primary">Muhammad Ahmad</span> Amjad
           </span>
         </a>
 
