@@ -26,7 +26,7 @@ const HeroSection = () => {
           >
             <div className="inline-block mb-4">
               <span className="font-mono text-sm text-primary px-3 py-1 rounded-full border border-primary/30 bg-primary/5">
-                &lt;/&gt; Cloud Architect & AI Engineer
+                &lt;/&gt; Cloud & AI Developer
               </span>
             </div>
 
