@@ -21,7 +21,7 @@ const projects = [
     category: "AI",
     color: "secondary",
     // Added GitHub Link
-    github: "https://github.com/ahmadamjadd/MultiAgents/tree/main/HealthInsightsAgent"
+    github: "https://github.com/ahmadamjadd/Sehat-Fahm"
   },
   {
     title: "Automated ECS Pipeline",
