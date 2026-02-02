@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Cloud, Brain, Cpu, Server, Workflow, Eye, Plane, Microchip } from "lucide-react";
+import { Cloud, Brain, Cpu, Server, Workflow, Eye, Plane, Microchip, Sparkles } from "lucide-react";
 
 const interests = [
   {
@@ -11,13 +11,13 @@ const interests = [
   {
     title: "Artificial Intelligence",
     icon: Brain,
-    description: "Computer Vision, Deep Learning, Agentic Workflows",
+    description: "Computer Vision, Deep Learning, Edge AI, Embedded Systems",
     color: "secondary",
   },
   {
-    title: "Autonomous Systems",
-    icon: Plane,
-    description: "Edge AI, Drone Navigation (DroneKit), Embedded Systems",
+    title: "Generative AI",
+    icon: Sparkles,
+    description: "LangGraph, RAG Pipelines, Multi-Agent Systems, n8n",
     color: "accent",
   },
 ];
@@ -30,7 +30,7 @@ const techStack = [
   { icon: Workflow, label: "LangChain" },
   { icon: Eye, label: "YOLO" },
   { icon: Microchip, label: "Jetson Orin Nano" },
-  
+  { icon: Workflow, label: "n8n" },
 ];
 
 const InterestsSection = () => {

@@ -38,7 +38,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Muhammad Ahmad Amjad | Cloud Dev | Artificial Intelligence. 
+              Muhammad Ahmad Amjad | Cloud Dev | GenAI | Machine Learning. 
               Building intelligent systems that scale.
             </p>
 
@@ -52,7 +52,7 @@ const HeroSection = () => {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="https://drive.google.com/file/d/1oiLDvQL7x4rTmP-SdbpamIic2JG8oeDg/view?usp=drive_link"
+                href="https://drive.google.com/drive/folders/1UmnblQgDaMzHmT3yV7hFyVH1cvARiaO_?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cyber-button inline-flex items-center justify-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg font-mono font-semibold hover:bg-primary/10 transition-all"

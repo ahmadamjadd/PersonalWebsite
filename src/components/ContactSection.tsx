@@ -139,7 +139,7 @@ const ContactSection = () => {
                 </p>
                 <div className="flex gap-4">
                   <a
-                    href="https://linkedin.com/in/muhammad-ahmad-amjad"
+                    href="https://linkedin.com/in/muhammad-ahmad-amjad-2862a5290"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg bg-muted hover:bg-primary/10 transition-colors group"

@@ -18,7 +18,7 @@ const projects = [
     description: "Multi-agent medical analysis system with Urdu voice accessibility for rural healthcare.",
     tech: ["LangGraph", "RAG", "ChromaDB", "Streamlit", "Python"],
     icon: Brain,
-    category: "AI",
+    category: "GenAI",
     color: "secondary",
     // Added GitHub Link
     github: "https://github.com/ahmadamjadd/Sehat-Fahm"
