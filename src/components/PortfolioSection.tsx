@@ -14,14 +14,13 @@ const projects = [
     github: "https://github.com/ahmadamjadd/GikiPool"
   },
   {
-    title: "Sehat Fahm",
-    description: "Multi-agent medical analysis system with Urdu voice accessibility for rural healthcare.",
-    tech: ["LangGraph", "RAG", "ChromaDB", "Streamlit", "Python"],
+    title: "FoxBrain AI",
+    description: "Retrieval-Augmented Generation (RAG) agent serving as a central knowledge hub for querying project-specific logic across multiple GitHub repositories of Team Foxtrot.",
+    tech: ["n8n", "Pinecone", "AWS Bedrock", "RAG", "Python"],
     icon: Brain,
     category: "GenAI",
     color: "secondary",
-    // Added GitHub Link
-    github: "https://github.com/ahmadamjadd/Sehat-Fahm"
+    github: "https://github.com/ahmadamjadd/FoxBrain-AI"
   },
   {
     title: "Automated ECS Pipeline",
@@ -34,14 +33,13 @@ const projects = [
     github: "https://github.com/ahmadamjadd/Automated-ECS-Fargate-Delivery-Pipeline"
   },
   {
-    title: "Oral Cancer Detection",
-    description: "Histopathological classification system achieving 95% test accuracy using deep learning.",
-    tech: ["TensorFlow", "EfficientNetB3", "Flask", "Python", "OpenCV"],
+    title: "CallPilot",
+    description: "Autonomous voice agent for the Hack-Nation Global AI Hackathon (Top Finalist) that handles searching, calling, and booking appointments via Swarm Mode.",
+    tech: ["FastAPI", "ElevenLabs", "Google Calendar API", "Python"],
     icon: Activity,
-    category: "ML",
+    category: "AI",
     color: "accent",
-    // Added GitHub Link
-    github: "https://github.com/ahmadamjadd/Deep-Learning/tree/main/CancerDetection"
+    github: "https://github.com/ahmadamjadd/CallPilot-MIT_HACKATHON"
   },
 ];
 
