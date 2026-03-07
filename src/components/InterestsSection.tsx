@@ -3,9 +3,9 @@ import { Cloud, Brain, Cpu, Server, Workflow, Eye, Plane, Microchip, Sparkles } 
 
 const interests = [
   {
-    title: "Cloud Computing",
+    title: "Cloud Computing / DevOps",
     icon: Cloud,
-    description: "AWS, Terraform (IaC), Boto3",
+    description: "AWS, Terraform (IaC), Boto3, Linux, Docker, Bash Scripting",
     color: "primary",
   },
   {
@@ -26,6 +26,9 @@ const techStack = [
   { icon: Cloud, label: "AWS" },
   { icon: Cloud, label: "Terraform" },
   { icon: Cloud, label: "Boto3" },
+  { icon: Server, label: "Linux" },
+  { icon: Server, label: "Docker" },
+  { icon: Server, label: "Bash" },
   { icon: Cpu, label: "TensorRT" },
   { icon: Workflow, label: "LangChain" },
   { icon: Eye, label: "YOLO" },

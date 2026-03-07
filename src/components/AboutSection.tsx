@@ -5,14 +5,14 @@ import { Cloud, Brain, Award, BookOpen, Sparkles, Eye } from "lucide-react";
 
 const skills = [
   {
-    category: "Cloud Architecture",
+    category: "Cloud Computing / DevOps",
     icon: Cloud,
-    description: "AWS Solutions Architect - Associate & Cloud Practitioner Courses",
+    description: "AWS Solutions Architect - Associate & Cloud Practitioner Courses, Linux, Docker, Bash Scripting",
     progress: 90,
     color: "from-primary to-cyber-cyan",
   },
   {
-    category: "Generative AI/Agentic AI",
+    category: "Generative AI / Agentic AI",
     icon: Sparkles,
     description: "LangGraph Multi-Agent Systems, RAG Pipelines, Groq, ChromaDB, n8n Automation",
     progress: 85,
@@ -89,7 +89,7 @@ const AboutSection = () => {
               </div>
 
               <p className="text-muted-foreground leading-relaxed">
-    Specializing in <span className="text-primary">Cloud Computing</span>, <span className="text-secondary">AI</span>, <span className="text-secondary">Agentic AI</span>, and <span className="text-secondary">AI Automations</span>. 
+    Specializing in <span className="text-primary">Cloud Computing</span>, <span className="text-primary">DevOps</span>, <span className="text-secondary">AI</span>, <span className="text-secondary">Agentic AI</span>, and <span className="text-secondary">AI Automations</span>. 
     Currently architecting scalable AWS infrastructure using Terraform and building intelligent multi-agent systems. 
     Also focuses on training, optimizing, and deploying deep learning models for edge devices.
   </p>
