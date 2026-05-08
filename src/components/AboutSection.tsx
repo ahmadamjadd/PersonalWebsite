@@ -7,7 +7,7 @@ const skills = [
   {
     category: "Cloud Computing / DevOps",
     icon: Cloud,
-    description: "AWS Solutions Architect - Associate & Cloud Practitioner Courses, Linux, Docker, Bash Scripting",
+    description: "AWS Solutions Architect - Associate & Cloud Practitioner Courses, Linux, Docker, Bash Scripting, CI/CD",
     progress: 90,
     color: "from-primary to-cyber-cyan",
   },
