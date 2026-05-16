@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Cloud, Brain, Server, Activity } from "lucide-react";
+import { ExternalLink, Github, Cloud, Brain, Activity } from "lucide-react";
 
 const projects = [
   {
@@ -23,14 +23,13 @@ const projects = [
     github: "https://github.com/ahmadamjadd/FoxBrain-AI"
   },
   {
-    title: "Automated ECS Pipeline",
-    description: "CI/CD pipeline for deploying Python applications on AWS Fargate with zero-downtime deployments.",
-    tech: ["Terraform", "AWS CodePipeline", "Docker", "ECS", "Fargate"],
-    icon: Server,
+    title: "Workout Tracker - DevOps",
+    description: "DevOps-focused workout tracking platform built around Dockerized services, GitHub Actions CI/CD, ECR-backed images, EC2 deployments, IAM roles, and PostgreSQL persistence across testing and staging environments.",
+    tech: ["Docker", "Docker Compose", "ECR", "EC2", "IAM Roles", "GitHub Actions", "FastAPI", "PostgreSQL"],
+    icon: Activity,
     category: "DevOps",
     color: "primary",
-    // Added GitHub Link
-    github: "https://github.com/ahmadamjadd/Automated-ECS-Fargate-Delivery-Pipeline"
+    github: "https://github.com/ahmadamjadd/Workout_Tracker_DevOps_Docker"
   },
   {
     title: "CallPilot",
@@ -109,18 +108,19 @@ const PortfolioSection = () => {
                   </div>
 
                   {/* Action buttons - UPDATED */}
-                  <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg bg-muted hover:bg-primary/10 transition-colors cursor-pointer"
-                      title="View Code on GitHub"
-                    >
-                      <Github className="w-4 h-4 text-muted-foreground hover:text-primary" />
-                    </a>
-                    {/* External Link icon removed as requested */}
-                  </div>
+                  {project.github && (
+                    <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-lg bg-muted hover:bg-primary/10 transition-colors cursor-pointer"
+                        title="View Code on GitHub"
+                      >
+                        <Github className="w-4 h-4 text-muted-foreground hover:text-primary" />
+                      </a>
+                    </div>
+                  )}
                 </div>
 
                 {/* Description */}
