@@ -17,7 +17,7 @@ const interests = [
   {
     title: "Generative AI",
     icon: Sparkles,
-    description: "LangGraph, RAG Pipelines, Multi-Agent Systems, n8n",
+    description: "LangGraph, RAG Pipelines, Multi-Agent Systems, Pinecone, ChromaDB, n8n",
     color: "accent",
   },
 ];
@@ -30,7 +30,10 @@ const techStack = [
   { icon: Server, label: "Docker" },
   { icon: Server, label: "Bash" },
   { icon: Cpu, label: "TensorRT" },
+  { icon: Workflow, label: "LangGraph" },
   { icon: Workflow, label: "LangChain" },
+  { icon: Workflow, label: "Pinecone" },
+  { icon: Workflow, label: "ChromaDB" },
   { icon: Eye, label: "YOLO" },
   { icon: Microchip, label: "Jetson Orin Nano" },
   { icon: Workflow, label: "n8n" },
