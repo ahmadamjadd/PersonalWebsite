@@ -38,7 +38,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Muhammad Ahmad Amjad | Cloud Dev | DevOps | Agentic AI | Machine Learning. 
+              Muhammad Ahmad Amjad | Agentic AI | AI Automation |Machine Learning | Cloud Dev | DevOps. 
               Building intelligent systems that scale.
             </p>
 

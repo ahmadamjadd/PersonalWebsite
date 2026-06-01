@@ -5,18 +5,18 @@ import { Cloud, Brain, Award, BookOpen, Sparkles, Eye } from "lucide-react";
 
 const skills = [
   {
+    category: "Generative AI / Agentic AI",
+    icon: Sparkles,
+    description: "LangGraph Multi-Agent Systems, LangChain, RAG Pipelines, ChromaDB, Pinecone, n8n Automation",
+    progress: 85,
+    color: "from-cyber-magenta to-cyber-purple",
+  },
+  {
     category: "Cloud Computing / DevOps",
     icon: Cloud,
     description: "AWS Solutions Architect - Associate & Cloud Practitioner Courses, Linux, Docker, Bash Scripting, CI/CD",
     progress: 90,
     color: "from-primary to-cyber-cyan",
-  },
-  {
-    category: "Generative AI / Agentic AI",
-    icon: Sparkles,
-    description: "LangGraph Multi-Agent Systems, RAG Pipelines, Groq, ChromaDB, n8n Automation",
-    progress: 85,
-    color: "from-cyber-magenta to-cyber-purple",
   },
   {
     category: "Machine Learning",

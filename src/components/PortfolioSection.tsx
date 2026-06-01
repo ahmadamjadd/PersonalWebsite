@@ -3,17 +3,6 @@ import { ExternalLink, Github, Cloud, Brain, Activity } from "lucide-react";
 
 const projects = [
   {
-    title: "GikiPool",
-    description: "Serverless carpooling platform for university students with real-time matching and secure authentication.",
-    // Updated "AWS Lambda" to "AWS"
-    tech: ["AWS Lambda", "AWS API Gateaway", "DynamoDB", "Cognito", "Terraform", "React"],
-    icon: Cloud,
-    category: "Cloud",
-    color: "primary",
-    // Added GitHub Link
-    github: "https://github.com/ahmadamjadd/GikiPool"
-  },
-  {
     title: "FoxBrain AI",
     description: "Retrieval-Augmented Generation (RAG) agent serving as a central knowledge hub for querying project-specific logic across multiple GitHub repositories of Team Foxtrot.",
     tech: ["n8n", "Pinecone", "AWS Bedrock", "RAG", "Python"],
@@ -21,15 +10,6 @@ const projects = [
     category: "GenAI",
     color: "secondary",
     github: "https://github.com/ahmadamjadd/FoxBrain-AI"
-  },
-  {
-    title: "Workout Tracker - DevOps",
-    description: "DevOps-focused workout tracking platform built around Dockerized services, GitHub Actions CI/CD, ECR-backed images, EC2 deployments, IAM roles, and PostgreSQL persistence across testing and staging environments.",
-    tech: ["Docker", "Docker Compose", "ECR", "EC2", "IAM Roles", "GitHub Actions", "FastAPI", "PostgreSQL"],
-    icon: Activity,
-    category: "DevOps",
-    color: "primary",
-    github: "https://github.com/ahmadamjadd/Workout_Tracker_DevOps_Docker"
   },
   {
     title: "CallPilot",
@@ -40,6 +20,28 @@ const projects = [
     color: "accent",
     github: "https://github.com/ahmadamjadd/CallPilot-MIT_HACKATHON"
   },
+  {
+    title: "GikiPool",
+    description: "Serverless carpooling platform for university students with real-time matching and secure authentication.",
+    // Updated "AWS Lambda" to "AWS"
+    tech: ["AWS Lambda", "AWS API Gateaway", "DynamoDB", "Cognito", "Terraform", "React"],
+    icon: Cloud,
+    category: "Cloud",
+    color: "primary",
+    // Added GitHub Link
+    github: "https://github.com/ahmadamjadd/GikiPool"
+  },
+
+  {
+    title: "Workout Tracker - DevOps",
+    description: "DevOps-focused workout tracking platform built around Dockerized services, GitHub Actions CI/CD, ECR-backed images, EC2 deployments, IAM roles, and PostgreSQL persistence across testing and staging environments.",
+    tech: ["Docker", "Docker Compose", "ECR", "EC2", "IAM Roles", "GitHub Actions", "FastAPI", "PostgreSQL"],
+    icon: Activity,
+    category: "DevOps",
+    color: "primary",
+    github: "https://github.com/ahmadamjadd/Workout_Tracker_DevOps_Docker"
+  },
+  
 ];
 
 const PortfolioSection = () => {
