@@ -38,8 +38,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Muhammad Ahmad Amjad | Agentic AI | AI Automation |Machine Learning | Cloud Dev | DevOps. 
-              Building intelligent systems that scale.
+              CS @ GIKI’27  | AWS Certified Solutions Architect | Cloud and AI Dev | Qimam Fellow ’26 | Ex-Cloud Engineering Intern @ Systems Limited | Ex-Software Engineering Intern @ CarbonTeq | Campus Ambassador @atomcamp
             </p>
 
             {/* CTA Buttons */}
